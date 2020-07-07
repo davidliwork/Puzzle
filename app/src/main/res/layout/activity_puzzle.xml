@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <cn.kevin.puzzle.PuzzleLayout
         android:id="@+id/activity_swipe_card"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical">
 
     </cn.kevin.puzzle.PuzzleLayout>
@@ -26,4 +31,4 @@
         android:layout_gravity="center|end"
         android:background="#55DDDDDD"
         android:text="@string/tips" />
-</FrameLayout>
+</android.support.constraint.ConstraintLayout>
